@@ -8,7 +8,8 @@ angular.module('Counting', [])
 	$scope.message = "";
 	$scope.toomuch = function(){
 		var jela = $scope.dishes.split(" ");
-		if(jela.length >= 2){
+		//$scope.message = jela.length;
+		if(jela.length > 1 && jela.length <= 3){
 			$scope.message = "Enjoy :)";
 		} else if (jela.length >= 4){
 			$scope.message = "Too Much!!!";
